@@ -60,6 +60,14 @@ const methodology = [
   },
 ];
 
+const iconMotions = [
+  { number: "01", title: "门禁系统", label: "ACCESS CONTROL", video: "/media/icon-motion-access.mp4" },
+  { number: "02", title: "机器人系统", label: "ROBOT SYSTEM", video: "/media/icon-motion-robot.mp4" },
+  { number: "03", title: "视频监控", label: "VIDEO SURVEILLANCE", video: "/media/icon-motion-surveillance.mp4" },
+  { number: "04", title: "线路巡检", label: "LINE INSPECTION", video: "/media/icon-motion-inspection.mp4" },
+  { number: "05", title: "环境监视", label: "ENVIRONMENT MONITORING", video: "/media/icon-motion-environment.mp4" },
+];
+
 function Header({ activeSection }) {
   return <header className="site-header">
     <div className="frame nav-shell">
@@ -210,6 +218,21 @@ function PortfolioHome() {
         ease: "power4.inOut",
         scrollTrigger: { trigger: ".work-grid", start: "top 80%", toggleActions: "play none none reverse" },
       });
+      gsap.from(".icon-motion-panel", {
+        autoAlpha: 0,
+        y: 72,
+        duration: 1.15,
+        ease,
+        scrollTrigger: { trigger: ".icon-motion-panel", start: "top 82%", toggleActions: "play none none reverse" },
+      });
+      gsap.from(".icon-motion-card", {
+        autoAlpha: 0,
+        y: 38,
+        duration: .9,
+        stagger: .12,
+        ease,
+        scrollTrigger: { trigger: ".icon-motion-panel", start: "top 80%", toggleActions: "play none none reverse" },
+      });
       if (enableScrollParallax) {
         gsap.to(".work-image img", {
           yPercent: 5,
@@ -329,6 +352,18 @@ function PortfolioHome() {
             </Link>
           </BorderGlow>)}
         </div>
+        <Reveal className="icon-motion-panel">
+          <div className="icon-motion-heading">
+            <div><p><span>04</span>｜图标动效</p><small>以系统图标动画呈现关键业务状态，让功能表达更直观、更有记忆点。</small></div>
+            <span>ICON MOTION STUDIES</span>
+          </div>
+          <div className="icon-motion-rail">
+            {iconMotions.map(({ number, title, label, video }) => <article className="icon-motion-card" key={number}>
+              <video src={video} aria-label={title} autoPlay loop muted playsInline preload="metadata" />
+              <div className="icon-motion-copy"><span className="icon-motion-index">{number}</span><div><strong>{title}</strong><span>{label}</span></div></div>
+            </article>)}
+          </div>
+        </Reveal>
       </div>
     </section>
 
