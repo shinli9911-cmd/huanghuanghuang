@@ -25,16 +25,24 @@ const works = [
 ];
 
 const featuredWorks = [
-  { ...works[0], title: "全场景监控设计实践", image: "/media/featured-01-all-scenarios.jpg", detailPath: "/project/all-scenarios/full-image", number: "01" },
-  { ...works[1], title: "数据智能可视化大屏", image: "/media/featured-02-data-screen.jpg", detailPath: "/project/data-visualization/full-image", category: "数据可视化 · 大屏设计", summary: "聚焦核心经营与运行指标的数据智能可视化大屏，让复杂数据从实时洞察到全局判断一目了然。", modules: ["数据监测", "图表分析", "全景洞察"], number: "02" },
-  { ...works[2], title: "新能源场站数据监盘 APP", image: "/media/featured-03-monitoring-app-v2.jpg", detailPath: "/project/monitoring-app/full-image", category: "移动端产品 · 数据监盘", summary: "面向新能源场站运行人员的移动数据监盘应用，让关键指标、设备状态与异常趋势随时可见、快速判断。", modules: ["移动监控", "数据分析", "交互体验"], number: "03" },
+  { ...works[0], title: "全场景监控设计实践", image: "/media/featured-01-all-scenarios.jpg", detailPath: "/project/all-scenarios/full-image", impact: "驾驶舱、监控大屏与监盘 APP 三端协同。", number: "01" },
+  { ...works[1], title: "数据智能可视化大屏", image: "/media/featured-02-data-screen.jpg", detailPath: "/project/data-visualization/full-image", category: "数据可视化 · 大屏设计", summary: "聚焦核心经营与运行指标的数据智能可视化大屏，让复杂数据从实时洞察到全局判断一目了然。", impact: "沉淀地图、图标、图表与全局态势的表达语言。", modules: ["数据监测", "图表分析", "全景洞察"], number: "02" },
+  { ...works[2], title: "新能源场站数据监盘 APP", image: "/media/featured-03-monitoring-app-v2.jpg", detailPath: "/project/monitoring-app/full-image", category: "移动端产品 · 数据监盘", summary: "面向新能源场站运行人员的移动数据监盘应用，让关键指标、设备状态与异常趋势随时可见、快速判断。", impact: "建立面向场站运行人员的移动监盘与判断界面。", modules: ["移动监控", "数据分析", "交互体验"], number: "03" },
 ];
 
 const fullImageProjects = {
-  "all-scenarios": { number: "01", title: "全场景监控设计实践", dimensions: "1920 × 29671", image: "/media/all-scenarios-case-study-opt.jpg" },
-  "data-visualization": { number: "02", title: "数据智能可视化大屏", dimensions: "1920 × 6480", image: "/media/data-visualization-case-study-opt.jpg" },
-  "monitoring-app": { number: "03", title: "新能源场站数据监盘 APP", dimensions: "1920 × 10120", image: "/media/monitoring-app-case-study-opt.jpg" },
+  "all-scenarios": { number: "01", title: "全场景监控设计实践", dimensions: "1920 × 29671", image: "/media/all-scenarios-case-study-opt.jpg", context: "面向新能源生产现场的多端监控体验设计，连接驾驶舱、监控大屏与移动监盘。", role: "需求梳理 / 信息架构 / 全端视觉与交互设计", focus: "统一多端信息层级、状态语言与关键任务路径。", outcome: "形成可复用的三端设计语言与组件表达。" },
+  "data-visualization": { number: "02", title: "数据智能可视化大屏", dimensions: "1920 × 6480", image: "/media/data-visualization-case-study-opt.jpg", context: "围绕经营与运行指标构建大屏可视化体验，让高密度数据支持快速全局判断。", role: "数据表达 / 大屏视觉系统 / 信息层级设计", focus: "协调地图、图标、图表与实时状态之间的阅读优先级。", outcome: "沉淀面向监控场景的数据可视化表达规范。" },
+  "monitoring-app": { number: "03", title: "新能源场站数据监盘 APP", dimensions: "1920 × 10120", image: "/media/monitoring-app-case-study-opt.jpg", context: "服务新能源场站运行人员的移动监盘应用，随时查看关键指标、设备状态与异常趋势。", role: "移动端体验框架 / 界面设计 / 指标呈现规则", focus: "在小屏内聚焦任务优先级，并降低现场判断成本。", outcome: "形成从总览到分析的移动监盘体验与设计规范。" },
 };
+
+const capabilities = [
+  [CircleUserRound, "用户研究", "User Research"],
+  [MousePointer2, "交互设计", "Interaction Design"],
+  [Palette, "视觉设计", "Visual Design"],
+  [BarChart3, "数据可视化", "Data Visualization", true],
+  [Blocks, "设计系统", "Design System", true],
+];
 
 const principles = [
   ["01", "业务真实", "从角色任务、现场约束与决策节点出发，让复杂系统回到真实工作流。"],
@@ -66,6 +74,32 @@ const iconMotions = [
   { number: "03", title: "视频监控", label: "VIDEO SURVEILLANCE", video: "/media/icon-motion-surveillance.mp4" },
   { number: "04", title: "线路巡检", label: "LINE INSPECTION", video: "/media/icon-motion-inspection.mp4" },
   { number: "05", title: "环境监视", label: "ENVIRONMENT MONITORING", video: "/media/icon-motion-environment.mp4" },
+];
+
+const careerHistory = [
+  {
+    period: "2022 — 至今",
+    company: "某新能源科技公司",
+    role: "UI 设计主管",
+    description: "专注能源数字化 B 端产品，主导智慧运维平台、风电场管控系统、新能源安生平台等核心项目设计交付，负责从需求梳理到设计落地的全链路设计。",
+  },
+  {
+    period: "2017 — 2022",
+    company: "苏宁易购·物流研发中心",
+    role: "设计经理",
+    description: "B 端为主，C 端为辅，涉及多端产品设计。",
+    details: [
+      ["B 端系统", "负责物流仓储后台系统（WMS/CMS）的 UI 搭建与设计规范维护，支撑 10 万+ 仓储与物流人员的日常操作。"],
+      ["C 端产品", "参与苏宁帮客+小程序、帮客 APP（售后师傅上门专用工具）、快递员 APP（快递员日常配送与订单管理）及苏宁帮客+APP 的界面设计与优化。"],
+      ["整体成果", "建立多端视觉规范与组件库，覆盖 B 端与 C 端设计标准统一。"],
+    ],
+  },
+  {
+    period: "2006 — 2017",
+    company: "江苏三六五地产家居网",
+    role: "设计主管",
+    description: "负责淘房网 APP 及官网日常维护、活动专题制作与视觉设计，积累移动端设计规范落地经验。",
+  },
 ];
 
 function Header({ activeSection }) {
@@ -152,19 +186,21 @@ function PortfolioHome() {
         .set(".hero-shade", { autoAlpha: 0 })
         .set(".site-header", { autoAlpha: 0, y: -30 })
         .set(".hero-overline, .hero-desc", { autoAlpha: 0, y: 32 })
+        .set(".hero-experience", { autoAlpha: 0, y: 46, scale: .96, transformOrigin: "100% 100%" })
         .set(".hero-display", { autoAlpha: 0, xPercent: -18, scaleX: .72, transformOrigin: "0% 50%" })
         .set(".hero-title-mask", { clipPath: "inset(0 0 100% 0)" })
         .set(".hero-title", { yPercent: 105, scaleY: .62, scaleX: .92, transformOrigin: "0% 100%" })
         .set(".tag-row .tag-glow", { autoAlpha: 0, y: 22, scale: .9 })
-        .to(".hero-opening-panel", { scaleY: 0, transformOrigin: "50% 0%", duration: 1.55, ease: "power4.inOut" })
-        .to(".hero-image", { scale: 1, yPercent: 0, duration: 2.5, ease: "power3.out" }, "<.08")
-        .to(".hero-shade", { autoAlpha: 1, duration: 1.3 }, "<.12")
-        .to(".site-header", { autoAlpha: 1, y: 0, duration: .9 }, "<.42")
-        .to(".hero-display", { autoAlpha: 1, xPercent: 0, scaleX: 1, duration: 1.4 }, "<.12")
-        .to(".hero-title-mask", { clipPath: "inset(0 0 0% 0)", duration: 1.3, ease: "power4.inOut" }, "<.22")
-        .to(".hero-title", { yPercent: 0, scaleY: 1, scaleX: 1, duration: 1.45 }, "<")
-        .to(".hero-overline, .hero-desc", { autoAlpha: 1, y: 0, duration: .85, stagger: .14 }, "<.28")
-        .to(".tag-row .tag-glow", { autoAlpha: 1, y: 0, scale: 1, duration: .72, stagger: .07, ease: "power3.out" }, "<.12");
+        .to(".hero-opening-panel", { scaleY: 0, transformOrigin: "50% 0%", duration: .86, ease: "power4.inOut" })
+        .to(".hero-image", { scale: 1, yPercent: 0, duration: 1.45, ease: "power3.out" }, "<.04")
+        .to(".hero-shade", { autoAlpha: 1, duration: .72 }, "<.05")
+        .to(".site-header", { autoAlpha: 1, y: 0, duration: .52 }, "<.18")
+        .to(".hero-display", { autoAlpha: 1, xPercent: 0, scaleX: 1, duration: .72 }, "<.04")
+        .to(".hero-title-mask", { clipPath: "inset(0 0 0% 0)", duration: .76, ease: "power4.inOut" }, "<.1")
+        .to(".hero-title", { yPercent: 0, scaleY: 1, scaleX: 1, duration: .84 }, "<")
+        .to(".hero-overline, .hero-desc", { autoAlpha: 1, y: 0, duration: .58, stagger: .09 }, "<.18")
+        .to(".tag-row .tag-glow", { autoAlpha: 1, y: 0, scale: 1, duration: .48, stagger: .055, ease: "power3.out" }, "<.08")
+        .to(".hero-experience", { autoAlpha: 1, y: 0, scale: 1, duration: .72, ease: "power3.out" }, "<-.3");
 
       const enableScrollParallax = window.matchMedia("(min-width: 901px)").matches;
       if (enableScrollParallax) {
@@ -305,19 +341,37 @@ function PortfolioHome() {
     <motion.div className="scroll-progress" style={{ scaleX }} />
     <Header activeSection={activeSection} />
     <section className="hero">
-      <img className="hero-image" src="/media/figma-hero-opt.jpg" alt="深蓝色星球与数字地形" fetchPriority="high" decoding="async" />
+      <img className="hero-image" src="/media/figma-hero-opt.jpg" alt="深蓝色星球与数字地形" fetchpriority="high" decoding="async" />
       <div className="hero-dot-field" aria-hidden="true"><DotField dotRadius={1} dotSpacing={18} cursorRadius={430} bulgeStrength={42} glowRadius={230} waveAmplitude={0.2} gradientFrom="rgba(180, 159, 244, 0.34)" gradientTo="rgba(84, 158, 230, 0.13)" glowColor="#2a2463" /></div>
       <div className="hero-shade" />
       <div className="hero-opening-panel" aria-hidden="true" />
       <div className="frame hero-content">
-        <Reveal className="hero-copy">
-          <p className="hero-overline">PORTFOLIO · UI/UX DESIGNER</p>
-          <p className="hero-display">Design Portfolio</p>
-          <div className="hero-title-mask"><h1 className="hero-title"><GradientText className="hero-gradient-title" colors={["#e7dcff", "#b18deb", "#6a97e6", "#b18deb"]} animationSpeed={10} direction="diagonal">为复杂系统建立<span>清晰秩序</span></GradientText></h1></div>
-          <p className="hero-desc">从业务、角色与数据出发，为复杂流程建立清晰、确定的设计秩序。</p>
-        </Reveal>
-        <div className="tag-row" aria-label="设计能力">
-          {["UI/UX 设计", "数据可视化", "组件化设计", "全场景设计", "AI 工具链整合"].map((tag) => <BorderGlow className="tag-glow" key={tag} glowColor="258 76 76" backgroundColor="rgba(20, 25, 43, .64)" borderRadius={999} glowRadius={12} glowIntensity={.68} coneSpread={22} fillOpacity={.16} colors={["#b18deb", "#6a97e6", "#6cd7cf"]}><span className="tag-label">{tag}</span></BorderGlow>)}
+        <div className="hero-layout">
+          <Reveal className="hero-copy">
+            <p className="hero-overline">PORTFOLIO · UI/UX DESIGNER</p>
+            <p className="hero-display">Design Portfolio</p>
+            <div className="hero-title-mask"><h1 className="hero-title"><GradientText className="hero-gradient-title" colors={["#e7dcff", "#b18deb", "#6a97e6", "#b18deb"]} animationSpeed={10} direction="diagonal">为复杂系统建立<span>清晰秩序</span></GradientText></h1></div>
+            <p className="hero-desc">从业务、角色与数据出发，为复杂流程建立清晰、确定的设计秩序。</p>
+            <div className="tag-row" aria-label="设计能力">
+              {["UI/UX 设计", "数据可视化", "组件化设计", "全场景设计", "AI 工具链整合"].map((tag) => <BorderGlow className="tag-glow" key={tag} glowColor="258 76 76" backgroundColor="rgba(20, 25, 43, .64)" borderRadius={999} glowRadius={12} glowIntensity={.68} coneSpread={22} fillOpacity={.16} colors={["#b18deb", "#6a97e6", "#6cd7cf"]}><span className="tag-label">{tag}</span></BorderGlow>)}
+            </div>
+          </Reveal>
+          <aside className="hero-experience" aria-label="工作经历">
+            <div className="hero-experience-heading"><span>职业履历</span><small>WORK EXPERIENCE · 2006 — NOW</small></div>
+            <div className="hero-experience-list">
+              {careerHistory.map(({ period, company, role, description, details }) => <article className="hero-experience-item" key={`${company}-${period}`}>
+                <p className="hero-experience-period">{period}</p>
+                <div className="hero-experience-body">
+                  <h2>{company}<span>· {role}</span></h2>
+                  <p className="hero-experience-description">{description}</p>
+                  {details && <dl>{details.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>}
+                </div>
+              </article>)}
+            </div>
+            <figure className="hero-experience-portrait">
+              <img src="/media/profile-portrait-crop.png" alt="黄娟个人肖像" />
+            </figure>
+          </aside>
         </div>
       </div>
     </section>
@@ -328,15 +382,15 @@ function PortfolioHome() {
         <Reveal className="capability-panel">
           <div className="capability-heading"><p><span>01</span>｜设计能力</p><small>从用户研究到设计落地，具备完整的设计能力体系</small></div>
           <div className="capability-list">
-            {[[CircleUserRound, "用户研究", "User Research"], [MousePointer2, "交互设计", "Interaction Design"], [Palette, "视觉设计", "Visual Design"], [BarChart3, "数据可视化", "Data Visualization"], [Blocks, "设计系统", "Design System"]].map(([Icon, title, subtitle]) => <div className="capability-item" key={title}><Icon aria-hidden="true" /><div><strong>{title}</strong><span>{subtitle}</span></div></div>)}
+            {capabilities.map(([Icon, title, subtitle, isCore]) => <div className={`capability-item${isCore ? " capability-item-core" : ""}`} key={title}><Icon aria-hidden="true" /><div><strong>{title}</strong><span>{subtitle}</span></div></div>)}
           </div>
         </Reveal>
         <Reveal className="featured-heading featured-heading-after-capability"><div><p><span>02</span>｜重点项目精选</p><small>精选具有代表性的核心项目，展示完整的设计思路与落地成果。</small></div><span>FEATURED PROJECTS</span></Reveal>
         <div className="featured-grid">
-          {featuredWorks.map(({ title, image, category, summary, slug, detailPath, modules, number }) => <BorderGlow className="featured-glow" key={slug} glowColor="258 76 76" backgroundColor="#0c1222" borderRadius={12} glowRadius={20} glowIntensity={.72} coneSpread={20} fillOpacity={.16} colors={["#b18deb", "#5696ee", "#66d2c5"]}>
+          {featuredWorks.map(({ title, image, category, summary, impact, slug, detailPath, modules, number }) => <BorderGlow className="featured-glow" key={slug} glowColor="258 76 76" backgroundColor="#0c1222" borderRadius={12} glowRadius={20} glowIntensity={.72} coneSpread={20} fillOpacity={.16} colors={["#b18deb", "#5696ee", "#66d2c5"]}>
             <Link className="featured-card" to={detailPath ?? `/project/${slug}`}>
               <div className="featured-media"><img src={image} alt={title} loading="lazy" decoding="async" /></div>
-              <div className="featured-copy"><div className="featured-kicker"><span>{number}</span><p>{category}</p></div><h3>{title}</h3><small>{summary}</small><div className="featured-tags">{modules.slice(0, 3).map((module) => <b key={module}>{module}</b>)}</div></div>
+              <div className="featured-copy"><div className="featured-kicker"><span>{number}</span><p>{category}</p></div><h3>{title}</h3><small>{summary}</small><p className="featured-impact"><span>DESIGN IMPACT</span>{impact}</p><div className="featured-tags">{modules.slice(0, 3).map((module) => <b key={module}>{module}</b>)}</div></div>
             </Link>
           </BorderGlow>)}
         </div>
@@ -348,7 +402,7 @@ function PortfolioHome() {
           {works.map(({ title, image, category, slug }) => <BorderGlow className="work-glow" key={title} glowColor="258 76 76" backgroundColor="#101727" borderRadius={10} glowRadius={18} glowIntensity={.6} coneSpread={20} fillOpacity={.22} colors={["#b18deb", "#6a97e6", "#6cd7cf"]}>
             <Link className="work-card" to={`/project/${slug}`}>
               <div className="work-image"><img src={image} alt={title} loading="lazy" decoding="async" /></div>
-              <div className="work-meta"><p>{category}</p><h3>{title}</h3></div>
+              <div className="work-meta"><p>{category}</p><h3>{title}</h3><span className="work-action">查看案例 <b>↗</b></span></div>
             </Link>
           </BorderGlow>)}
         </div>
@@ -516,6 +570,12 @@ function FullImageProject() {
       <p>CASE STUDY / {project.number}</p>
       <h1>{project.title}</h1>
       <span>FULL DESIGN PRESENTATION · {project.dimensions}</span>
+      <dl className="full-image-proof" aria-label={`${project.title}项目摘要`}>
+        <div><dt>PROJECT CONTEXT</dt><dd>{project.context}</dd></div>
+        <div><dt>MY ROLE</dt><dd>{project.role}</dd></div>
+        <div><dt>DESIGN FOCUS</dt><dd>{project.focus}</dd></div>
+        <div><dt>DESIGN OUTCOME</dt><dd>{project.outcome}</dd></div>
+      </dl>
     </section>
 
     <section className="full-image-stage" id="full-image">
