@@ -27,13 +27,13 @@ const works = [
 const featuredWorks = [
   { ...works[0], title: "全场景监控设计实践", image: "/media/featured-01-all-scenarios.jpg", detailPath: "/project/all-scenarios/full-image", impact: "驾驶舱、监控大屏与监盘 APP 三端协同。", number: "01" },
   { ...works[1], title: "数据智能可视化大屏", image: "/media/featured-02-data-screen.jpg", detailPath: "/project/data-visualization/full-image", category: "数据可视化 · 大屏设计", summary: "聚焦核心经营与运行指标的数据智能可视化大屏，让复杂数据从实时洞察到全局判断一目了然。", impact: "沉淀地图、图标、图表与全局态势的表达语言。", modules: ["数据监测", "图表分析", "全景洞察"], number: "02" },
-  { ...works[2], title: "新能源场站数据监盘 APP", image: "/media/featured-03-monitoring-app-v2.jpg", detailPath: "/project/monitoring-app/full-image", category: "移动端产品 · 数据监盘", summary: "面向新能源场站运行人员的移动数据监盘应用，让关键指标、设备状态与异常趋势随时可见、快速判断。", impact: "建立面向场站运行人员的移动监盘与判断界面。", modules: ["移动监控", "数据分析", "交互体验"], number: "03" },
+  { ...works[2], title: "新能源场站数据监盘 APP", image: "/media/featured-03-monitoring-app-0803.jpg", detailPath: "/project/monitoring-app/full-image", category: "移动端产品 · 数据监盘", summary: "面向新能源场站运行人员的移动数据监盘应用，让关键指标、设备状态与异常趋势随时可见、快速判断。", impact: "建立面向场站运行人员的移动监盘与判断界面。", modules: ["移动监控", "数据分析", "交互体验"], number: "03" },
 ];
 
 const fullImageProjects = {
   "all-scenarios": { number: "01", title: "全场景监控设计实践", dimensions: "1920 × 29671", image: "/media/all-scenarios-case-study-opt.jpg", context: "面向新能源生产现场的多端监控体验设计，连接驾驶舱、监控大屏与移动监盘。", role: "需求梳理 / 信息架构 / 全端视觉与交互设计", focus: "统一多端信息层级、状态语言与关键任务路径。", outcome: "形成可复用的三端设计语言与组件表达。" },
   "data-visualization": { number: "02", title: "数据智能可视化大屏", dimensions: "1920 × 6480", image: "/media/data-visualization-case-study-opt.jpg", context: "围绕经营与运行指标构建大屏可视化体验，让高密度数据支持快速全局判断。", role: "数据表达 / 大屏视觉系统 / 信息层级设计", focus: "协调地图、图标、图表与实时状态之间的阅读优先级。", outcome: "沉淀面向监控场景的数据可视化表达规范。" },
-  "monitoring-app": { number: "03", title: "新能源场站数据监盘 APP", dimensions: "1920 × 10120", image: "/media/monitoring-app-case-study-opt.jpg", context: "服务新能源场站运行人员的移动监盘应用，随时查看关键指标、设备状态与异常趋势。", role: "移动端体验框架 / 界面设计 / 指标呈现规则", focus: "在小屏内聚焦任务优先级，并降低现场判断成本。", outcome: "形成从总览到分析的移动监盘体验与设计规范。" },
+  "monitoring-app": { number: "03", title: "新能源场站数据监盘 APP", dimensions: "1920 × 12099", image: "/media/monitoring-app-case-study-0803.png", context: "服务新能源场站运行人员的移动监盘应用，随时查看关键指标、设备状态与异常趋势。", role: "移动端体验框架 / 界面设计 / 指标呈现规则", focus: "在小屏内聚焦任务优先级，并降低现场判断成本。", outcome: "形成从总览到分析的移动监盘体验与设计规范。" },
 };
 
 const capabilities = [
@@ -269,6 +269,21 @@ function PortfolioHome() {
         ease,
         scrollTrigger: { trigger: ".icon-motion-panel", start: "top 80%", toggleActions: "play none none reverse" },
       });
+      gsap.from(".publication-panel", {
+        autoAlpha: 0,
+        y: 72,
+        duration: 1.15,
+        ease,
+        scrollTrigger: { trigger: ".publication-panel", start: "top 82%", toggleActions: "play none none reverse" },
+      });
+      gsap.from(".publication-panel > *", {
+        autoAlpha: 0,
+        y: 34,
+        duration: .9,
+        stagger: .12,
+        ease,
+        scrollTrigger: { trigger: ".publication-panel", start: "top 80%", toggleActions: "play none none reverse" },
+      });
       if (enableScrollParallax) {
         gsap.to(".work-image img", {
           yPercent: 5,
@@ -416,6 +431,18 @@ function PortfolioHome() {
               <video src={video} aria-label={title} autoPlay loop muted playsInline preload="metadata" />
               <div className="icon-motion-copy"><span className="icon-motion-index">{number}</span><div><strong>{title}</strong><span>{label}</span></div></div>
             </article>)}
+          </div>
+        </Reveal>
+        <Reveal className="publication-panel">
+          <div className="publication-copy">
+            <p className="publication-kicker"><span>05</span>｜画册设计</p>
+            <p className="publication-description">从项目画册到品牌视觉，持续探索信息、图像与留白之间的表达关系，让内容拥有更完整的阅读体验。</p>
+          </div>
+          <div className="publication-archive">
+            <img className="publication-spread" src="/media/publication-design-spread.png" alt="新能源行业画册封面与内页设计展示" loading="lazy" decoding="async" />
+            <div className="publication-divider">
+              <img className="publication-spread publication-spread-secondary" src="/media/publication-design-covers.png" alt="新能源行业解决方案画册封面设计展示" loading="lazy" decoding="async" />
+            </div>
           </div>
         </Reveal>
       </div>
