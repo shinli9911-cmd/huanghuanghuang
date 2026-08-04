@@ -96,7 +96,7 @@ const careerHistory = [
   },
   {
     period: "2006 — 2017",
-    company: "江苏三六五地产家居网",
+    company: "江苏三六五网络股份有限公司",
     role: "设计主管",
     description: "负责淘房网 APP 及官网日常维护、活动专题制作与视觉设计，积累移动端设计规范落地经验。",
   },
