@@ -166,3 +166,6 @@ a { color: inherit; text-decoration: none; }
 .publication-panel .publication-copy { max-width: 720px; }
 .publication-panel .publication-archive { width: 100%; }
 @media (max-width: 640px) { .publication-panel { gap: 28px; } }
+
+/* Keep all capability labels in the same framed visual system. */
+.capability-item { border-color: rgba(171, 160, 215, .16); background: linear-gradient(112deg, rgba(135, 101, 210, .055), rgba(86, 135, 217, .025)); }
