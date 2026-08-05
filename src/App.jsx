@@ -31,7 +31,7 @@ const featuredWorks = [
 ];
 
 const fullImageProjects = {
-  "all-scenarios": { number: "01", title: "全场景监控设计实践", dimensions: "1920 × 29671", image: "/media/all-scenarios-case-study-opt.jpg", context: "面向新能源生产现场的多端监控体验设计，连接驾驶舱、监控大屏与移动监盘。", role: "需求梳理 / 信息架构 / 全端视觉与交互设计", focus: "统一多端信息层级、状态语言与关键任务路径。", outcome: "形成可复用的三端设计语言与组件表达。" },
+  "all-scenarios": { number: "01", title: "全场景监控设计实践", dimensions: "1920 × 29349", image: "/media/all-scenarios-case-study-20260805.jpg", context: "面向新能源生产现场的多端监控体验设计，连接驾驶舱、监控大屏与移动监盘。", role: "需求梳理 / 信息架构 / 全端视觉与交互设计", focus: "统一多端信息层级、状态语言与关键任务路径。", outcome: "形成可复用的三端设计语言与组件表达。" },
   "data-visualization": { number: "02", title: "数据智能可视化大屏", dimensions: "1920 × 6480", image: "/media/data-visualization-case-study-opt.jpg", context: "围绕经营与运行指标构建大屏可视化体验，让高密度数据支持快速全局判断。", role: "数据表达 / 大屏视觉系统 / 信息层级设计", focus: "协调地图、图标、图表与实时状态之间的阅读优先级。", outcome: "沉淀面向监控场景的数据可视化表达规范。" },
   "monitoring-app": { number: "03", title: "新能源场站数据监盘 APP", dimensions: "1920 × 12099", image: "/media/monitoring-app-case-study-0803.png", context: "服务新能源场站运行人员的移动监盘应用，随时查看关键指标、设备状态与异常趋势。", role: "移动端体验框架 / 界面设计 / 指标呈现规则", focus: "在小屏内聚焦任务优先级，并降低现场判断成本。", outcome: "形成从总览到分析的移动监盘体验与设计规范。" },
 };

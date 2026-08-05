@@ -9,7 +9,7 @@ const index = path.join(dist, "client", "index.html");
 const worker = path.join(root, "worker", "index.js");
 const hosting = path.join(root, ".openai", "hosting.json");
 const deployedMedia = new Set([
-  "all-scenarios-case-study-opt.jpg",
+  "all-scenarios-case-study-20260805.jpg",
   "data-visualization-case-study-opt.jpg",
   "featured-01-all-scenarios.jpg",
   "featured-02-data-screen.jpg",
