@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist/client"
+
+# The portfolio uses client-side routes for full-length case-study pages.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
