@@ -26,13 +26,13 @@ const works = [
 
 const featuredWorks = [
   { ...works[0], title: "全场景监控设计实践", image: "/media/featured-01-all-scenarios.jpg", detailPath: "/project/all-scenarios/full-image", impact: "驾驶舱、监控大屏与监盘 APP 三端协同。", number: "01" },
-  { ...works[1], title: "数据智能可视化大屏", image: "/media/featured-02-data-screen.jpg", detailPath: "/project/data-visualization/full-image", category: "数据可视化 · 大屏设计", summary: "聚焦核心经营与运行指标的数据智能可视化大屏，让复杂数据从实时洞察到全局判断一目了然。", impact: "沉淀地图、图标、图表与全局态势的表达语言。", modules: ["数据监测", "图表分析", "全景洞察"], number: "02" },
+  { ...works[1], title: "数据可视化监控大屏", image: "/media/featured-02-data-visualization-20260806.jpg", detailPath: "/project/data-visualization/full-image", category: "数据可视化 · 监控大屏", summary: "面向新能源资产运维的监控大屏，将全局态势、核心指标与实时状态整合为清晰的决策界面。", impact: "建立地图、告警、指标趋势与设备运行状态的一体化表达。", modules: ["全局态势", "实时监测", "告警分析"], number: "02" },
   { ...works[2], title: "新能源场站数据监盘 APP", image: "/media/featured-03-monitoring-app-0803.jpg", detailPath: "/project/monitoring-app/full-image", category: "移动端产品 · 数据监盘", summary: "面向新能源场站运行人员的移动数据监盘应用，让关键指标、设备状态与异常趋势随时可见、快速判断。", impact: "建立面向场站运行人员的移动监盘与判断界面。", modules: ["移动监控", "数据分析", "交互体验"], number: "03" },
 ];
 
 const fullImageProjects = {
   "all-scenarios": { number: "01", title: "全场景监控设计实践", dimensions: "1920 × 29349", image: "/media/all-scenarios-case-study-20260805.jpg", context: "面向新能源生产现场的多端监控体验设计，连接驾驶舱、监控大屏与移动监盘。", role: "需求梳理 / 信息架构 / 全端视觉与交互设计", focus: "统一多端信息层级、状态语言与关键任务路径。", outcome: "形成可复用的三端设计语言与组件表达。" },
-  "data-visualization": { number: "02", title: "数据智能可视化大屏", dimensions: "1920 × 6480", image: "/media/data-visualization-case-study-opt.jpg", context: "围绕经营与运行指标构建大屏可视化体验，让高密度数据支持快速全局判断。", role: "数据表达 / 大屏视觉系统 / 信息层级设计", focus: "协调地图、图标、图表与实时状态之间的阅读优先级。", outcome: "沉淀面向监控场景的数据可视化表达规范。" },
+  "data-visualization": { number: "02", title: "数据可视化监控大屏", dimensions: "1920 × 11597", image: "/media/data-visualization-case-study-20260806.jpg", context: "面向新能源资产运维的监控大屏体验设计，统筹运营概览、运行监测、设备状态与告警处置。", role: "大屏视觉系统 / 数据表达 / 信息架构设计", focus: "建立全局态势、指标趋势与异常告警之间的阅读层级，让高密度信息可快速判断。", outcome: "沉淀地图、图标、图表与实时状态统一的数据可视化规范。" },
   "monitoring-app": { number: "03", title: "新能源场站数据监盘 APP", dimensions: "1920 × 12099", image: "/media/monitoring-app-case-study-0803.png", context: "服务新能源场站运行人员的移动监盘应用，随时查看关键指标、设备状态与异常趋势。", role: "移动端体验框架 / 界面设计 / 指标呈现规则", focus: "在小屏内聚焦任务优先级，并降低现场判断成本。", outcome: "形成从总览到分析的移动监盘体验与设计规范。" },
 };
 

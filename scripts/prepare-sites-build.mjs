@@ -10,9 +10,9 @@ const worker = path.join(root, "worker", "index.js");
 const hosting = path.join(root, ".openai", "hosting.json");
 const deployedMedia = new Set([
   "all-scenarios-case-study-20260805.jpg",
-  "data-visualization-case-study-opt.jpg",
+  "data-visualization-case-study-20260806.jpg",
   "featured-01-all-scenarios.jpg",
-  "featured-02-data-screen.jpg",
+  "featured-02-data-visualization-20260806.jpg",
   "featured-03-monitoring-app-0803.jpg",
   "figma-hero-opt.jpg",
   "figma-work-01.png",

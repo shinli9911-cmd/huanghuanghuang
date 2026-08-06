@@ -40,6 +40,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - The design-philosophy screen follows the 2026-07-24 reference: a full-width gradient `DESIGN PHILOSOPHY` masthead, Chinese statement and introduction aligned beneath it, three independent numbered principle cards, and a three-step icon-led horizontal methodology flow on desktop (stacked vertically on small screens). Keep the existing philosophy and project copy intact when refining this structure.
 - The hero places the frosted `职业履历 / WORK EXPERIENCE` card directly below the capability tags, at roughly two-thirds of the desktop content width. Keep the three career stages and their supplied long-form content intact; it becomes full-width on tablet and mobile.
 - The publication-design module is vertically aligned at every viewport width: its heading and description appear first, followed by full-width artwork in sequence. Keep the two artworks separated by a 6px-dash / 3px-gap divider at 50% opacity.
+- Featured project 02 is the supplied “数据可视化监控大屏” case study. Keep its 1920×1024 top-cover crop on the homepage and render its 1920×11597 complete case-study image on the dedicated full-image page.
 ## 性能约定
 
 - 项目长图页面使用 `*-case-study-opt.jpg` 作为线上资源；原始 PNG/JPG 仅保留为源文件备份。
